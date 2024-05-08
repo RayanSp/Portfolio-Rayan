@@ -24,10 +24,12 @@
     }
 
     label.logo {
+        background-image: linear-gradient(to right, var(--c-white), var(--c-lightblue));
+        -webkit-background-clip: text;
+        color: transparent;
         font-size: 35px;
         line-height: 80px;
         padding-left: 2rem;
-        color: var(--c-lightblue);
         font-weight: bolder;
     }
 
