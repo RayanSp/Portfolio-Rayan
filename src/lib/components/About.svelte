@@ -2,7 +2,12 @@
 </script>
 
 <!-- About Section -->
-<section id="about">
+
+<main>
+
+<div class="loader"></div>
+
+<section id="main">
   <article class="intro">
     <h1>Hi, I'm Rayan Spall</h1>
     <h2>Frontend Developer</h2>
@@ -10,7 +15,7 @@
     <button class="btn-work" href="#">My Work</button>
   </article>
 
-  <article class="about">
+  <article id="About" class="about">
     <h3>About Me</h3>
     <p>
       My name Rayan Spall, a 19 year old frontend developer. I'm currently
@@ -21,9 +26,12 @@
       my studies.
     </p>
   </article>
-</section>
 
+
+</section>
+</main>
 <style>
+
   .intro {
     background: var(--c-container);
     margin: 2rem;
@@ -42,8 +50,25 @@
     -webkit-background-clip: text;
     color: transparent;
     font-size: 40px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-right: 3px solid var(--c-lightblue);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+      typing 2s steps(18),
+      cursor .5s step-end infinite alternate;
+  }
+
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @keyframes typing {
+    from { width: 0; }
   }
 
   .btn-contact {
@@ -92,4 +117,5 @@
     border-left: 2px solid var(--c-lightblue);
   }
 
+  
 </style>
