@@ -9,10 +9,12 @@
 
 <section id="main">
   <article class="intro">
+    <div class="intro-styling">
     <h1>Hi, I'm Rayan Spall</h1>
     <h2>Frontend Developer</h2>
     <button class="btn-contact">Contact Me</button>
     <button class="btn-work" href="#">My Work</button>
+  </div>
   </article>
 
   <article id="About" class="about">
@@ -40,10 +42,15 @@
     color: var(--c-white);
   }
 
+  .intro-styling {
+    width: fit-content;
+  }
+
   h1 {
     font-weight: lighter;
     font-size: 25px;
   }
+
 
   h2 {
     background-image: linear-gradient(to right, var(--c-white), var(--c-lightblue) 10%);
