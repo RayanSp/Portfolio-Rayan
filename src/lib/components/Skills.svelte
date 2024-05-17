@@ -17,6 +17,8 @@
       <div class="skills">LUA</div>
       <div class="skills">NEXTJS</div>
       <div class="skills">FIGMA</div>
+      <div class="skills">NODEJS</div>
+      <div class="skills">EXPRESS</div>
   </div>
   <div class="logos-slide">
     <div class="skills">HTML</div>
@@ -27,6 +29,8 @@
     <div class="skills">LUA</div>
     <div class="skills">NEXTJS</div>
     <div class="skills">FIGMA</div>
+    <div class="skills">NODEJS</div>
+    <div class="skills">EXPRESS</div>
 </div>
 <div class="logos-slide">
     <div class="skills">HTML</div>
@@ -37,6 +41,8 @@
     <div class="skills">LUA</div>
     <div class="skills">NEXTJS</div>
     <div class="skills">FIGMA</div>
+    <div class="skills">NODEJS</div>
+    <div class="skills">EXPRESS</div>
 </div>
   </article>
 </section>
@@ -79,6 +85,10 @@ section {
     animation: 20s slide infinite linear;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.logo:hover .logos-slide {
+  animation-play-state: paused;
 }
 
 h4 {

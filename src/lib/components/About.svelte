@@ -80,9 +80,9 @@
 
   .btn-contact {
     padding: 0.5rem;
-    background-image: linear-gradient(to right, var(--c-darkblue), var(--c-lightblue));
     color: var(--c-white);
-    border: none;
+    border: 2px solid var(--c-lightblue);
+    background: transparent;
     height: 2.5rem;
     border-radius: 12px;
     cursor: pointer;
@@ -91,10 +91,15 @@
     text-decoration: none;
   }
 
+  .btn-contact:hover {
+    background: var(--c-lightblue);
+  }
+
   .btn-work {
     padding: 0.5rem;
     background-image: linear-gradient(to right, var(--c-darkblue), var(--c-lightblue));
-    border: none;
+    border: 2px solid var(--c-lightblue);
+    background: transparent;
     color: var(--c-white);
     margin-left: 1rem;
     height: 2.5rem;
@@ -103,6 +108,10 @@
     transition: 0.2s ease-in-out;
     font-size: 16px;
     text-decoration: none;
+  }
+
+  .btn-work:hover {
+    background: var(--c-lightblue);
   }
 
   .about {
