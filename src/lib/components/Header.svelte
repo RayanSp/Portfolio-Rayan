@@ -28,9 +28,9 @@
         </button>
         <ul>
             <li> <a href="/work">About</a></li>
-            <li> <a href="/work">Skills</a></li>
-            <li> <a href="/work">My Work</a></li>
-            <li> <a href="/work">Contact</a></li>
+            <li> <a href="#">Skills</a></li>
+            <li> <a href="#">My Work</a></li>
+            <li> <a href="#">Contact</a></li>
         </ul>
     </nav>
     <div class="overlay" id="overlay"></div>
