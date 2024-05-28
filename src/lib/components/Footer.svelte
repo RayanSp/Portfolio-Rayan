@@ -1,9 +1,7 @@
 <script>
-
 </script>
 
-<footer>
-</footer>
+<footer></footer>
 
 <style>
 </style>

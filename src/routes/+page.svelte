@@ -19,7 +19,5 @@
 
 <Footer />
 
-
 <style>
-
 </style>
