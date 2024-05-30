@@ -3,7 +3,7 @@
 
 <header>
   <div class="header-styling">
-    <h1>Rayan</h1>
+    <h1><a href="/">Rayan</a></h1>
 
     <button class="menu-btn" popovertarget="menu">
       <svg
@@ -87,10 +87,10 @@
       </svg>
     </button>
     <ul>
-      <li><a href="/work">About</a></li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">My Work</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="/work" data-text="&nbsp;ABOUT">&nbsp;About&nbsp;</a></li>
+      <li><a href="#" data-text="&nbsp;SKILLS">&nbsp;Skills&nbsp;</a></li>
+      <li><a href="#" data-text="&nbsp;MY WORK">&nbsp;My Work&nbsp;</a></li>
+      <li><a href="#" data-text="&nbsp;CONTACT">&nbsp;Contact&nbsp;</a></li>
     </ul>
   </nav>
   <div class="overlay" id="overlay"></div>
@@ -163,16 +163,37 @@
   }
 
   ul li a {
-    font-size: 1.5em;
+    font-size: 2em;
+    text-transform: uppercase;
     text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--c-white);
+    position: relative;
   }
 
-  h1 {
+  ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: var(--c-white);
+    transition: .3s;
+    border-right: 3px solid var(--c-white);
+  }
+
+  ul li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px white);
+  }
+
+  h1 a {
     background-image: linear-gradient(
       to right,
       var(--c-white),
       var(--c-lightblue)
     );
+    text-decoration: none;
     -webkit-background-clip: text;
     color: transparent;
     font-size: 35px;
