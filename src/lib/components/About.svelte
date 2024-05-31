@@ -11,7 +11,7 @@
       <div class="intro-styling">
         <h1>Hi, I'm Rayan Spall</h1>
         <h2>Frontend Developer</h2>
-        <button class="btn-contact">Contact Me</button>
+        <button class="btn-contact" href="/contact">Contact Me</button>
         <button class="btn-work" href="#">My Work</button>
       </div>
     </article>

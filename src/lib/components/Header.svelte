@@ -87,10 +87,10 @@
       </svg>
     </button>
     <ul>
-      <li><a href="/work" data-text="&nbsp;ABOUT">&nbsp;About&nbsp;</a></li>
+      <li><a href="/contact" data-text="&nbsp;ABOUT">&nbsp;About&nbsp;</a></li>
       <li><a href="#" data-text="&nbsp;SKILLS">&nbsp;Skills&nbsp;</a></li>
       <li><a href="#" data-text="&nbsp;MY WORK">&nbsp;My Work&nbsp;</a></li>
-      <li><a href="#" data-text="&nbsp;CONTACT">&nbsp;Contact&nbsp;</a></li>
+      <li><a href="/contact" data-text="&nbsp;CONTACT">&nbsp;Contact&nbsp;</a></li>
     </ul>
   </nav>
   <div class="overlay" id="overlay"></div>
