@@ -33,7 +33,8 @@
 <style>
   .intro {
     background: var(--c-container);
-    margin: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     border-radius: 15px;
     padding: 2rem;
     color: var(--c-white);
@@ -122,7 +123,10 @@
 
   .about {
     background: var(--c-container);
-    margin: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     border-radius: 15px;
     padding: 2rem;
     color: var(--c-white);

@@ -143,7 +143,10 @@
     display: flex;
     justify-content: space-between;
     background: var(--c-container);
-    margin: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     border-radius: 15px;
   }
 

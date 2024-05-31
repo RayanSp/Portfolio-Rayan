@@ -2,7 +2,7 @@
 </script>
 
 <section>
-  <h4>Skills</h4>
+  <!-- <h4>Skills</h4> -->
 
   <article id="Skills" class="logo">
     <div class="logos-slide">
@@ -69,8 +69,8 @@
     flex-direction: row;
     justify-content: center;
     /* width: 60rem; */
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     background-color: var(--c-container);
     margin-bottom: 5rem;
     border-radius: 15px;
