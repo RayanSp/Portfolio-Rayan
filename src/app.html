@@ -12,3 +12,66 @@
     <div style="display: contents">%sveltekit.body%</div>
   </body>
 </html>
+
+
+<style>
+      	#repos-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.25rem;
+		justify-content: center;
+	}
+
+	.repository {
+		background: white;
+		box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+		width: 20rem;
+		padding: 1.25rem;
+		border-radius: 0.5rem;
+	}
+
+	.repository h2 {
+		margin-top: 0;
+	}
+
+	.repository a {
+		text-decoration: none;
+		color: #0366d6;
+	}
+
+	.repository p a {
+		text-decoration: none;
+		color: red;
+	}
+
+	.repository p {
+		max-width: 20rem;
+	}
+
+	.repository a:hover {
+		text-decoration: underline;
+	}
+</style>
+
+<script>
+	function search() {
+		const input = document.getElementById('searchInput');
+		const filterName = input.value.replace(/\s/g, '-').toUpperCase();
+		const filterDescription = input.value.toUpperCase();
+		const repos = document.getElementsByClassName('repository');
+
+		for (let i = 0; i < repos.length; i++) {
+			const a = repos[i].getElementsByTagName('a')[0];
+			const pElements = repos[i].getElementsByTagName('p');
+			const repoName = (a.textContent || a.innerText).replace(/\s/g, '-').toUpperCase();
+			const repoDescription1 = (pElements[0].textContent || pElements[0].innerText).toUpperCase();
+			const repoDescription2 = (pElements[1].textContent || pElements[1].innerText).toUpperCase();
+			repos[i].style.display =
+				repoName.includes(filterName) ||
+				repoDescription1.includes(filterDescription) ||
+				repoDescription2.includes(filterDescription)
+					? ''
+					: 'none';
+		}
+	}
+</script>
