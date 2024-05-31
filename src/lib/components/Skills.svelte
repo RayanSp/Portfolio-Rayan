@@ -13,7 +13,8 @@
       <div class="skills">SVELTE</div>
       <div class="skills">LUA</div>
       <div class="skills">NEXTJS</div>
-      <div class="skills">FIGMA</div>
+      <div class="skills">UX Design</div>
+      <div class="skills">UI Design</div>
       <div class="skills">NODEJS</div>
       <div class="skills">EXPRESS</div>
     </div>
@@ -25,7 +26,8 @@
       <div class="skills">SVELTE</div>
       <div class="skills">LUA</div>
       <div class="skills">NEXTJS</div>
-      <div class="skills">FIGMA</div>
+      <div class="skills">UX Design</div>
+      <div class="skills">UI Design</div>
       <div class="skills">NODEJS</div>
       <div class="skills">EXPRESS</div>
     </div>
@@ -37,7 +39,8 @@
       <div class="skills">SVELTE</div>
       <div class="skills">LUA</div>
       <div class="skills">NEXTJS</div>
-      <div class="skills">FIGMA</div>
+      <div class="skills">UX Design</div>
+      <div class="skills">UI Design</div>
       <div class="skills">NODEJS</div>
       <div class="skills">EXPRESS</div>
     </div>
@@ -99,7 +102,7 @@
     padding: 1rem;
     border: 2px solid var(--c-lightblue);
     margin-right: 10rem;
-    width: 4rem;
+    width: 5rem;
     box-shadow: -5px 5px 15px var(--c-lightblue);
     text-align: center;
   }
