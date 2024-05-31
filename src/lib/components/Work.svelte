@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		const username = 'RayanSp';
+		const username = 'kosterm14';
 		const apiUrl = `https://api.github.com/users/${username}/repos?sort=updated&per_page=50`;
 
 		fetch(apiUrl)
@@ -35,7 +35,7 @@
 </script>
 
 <section>
-	<h1>My Work</h1>
+	<h1>Mijn levenswerk</h1>
 
 	<nav>
 		<input
@@ -48,9 +48,6 @@
 	</nav>
 
 	<ul id="repos-container"></ul>
-
-    
-
 </section>
 
 <style>
