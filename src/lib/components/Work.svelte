@@ -35,7 +35,7 @@
 </script>
 
 <section>
-	<h1>Mijn levenswerk</h1>
+	<h1>My Work</h1>
 
 	<nav>
 		<input
