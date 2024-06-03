@@ -14,6 +14,11 @@
         <button class="btn-contact" href="/contact">Contact Me</button>
         <button class="btn-work" href="#">My Work</button>
       </div>
+      <div>
+        <!-- svelte-ignore a11y-img-redundant-alt -->
+        <!-- <img src="images/pf_rayan.png" alt="picture of me"  /> -->
+      </div>
+
     </article>
 
     <article id="About" class="about">
@@ -32,12 +37,18 @@
 
 <style>
   .intro {
+    display: flex;
+    flex-direction: row;
     background: var(--c-container);
     margin-left: 10rem;
     margin-right: 10rem;
     border-radius: 15px;
     padding: 2rem;
     color: var(--c-white);
+  }
+
+  img {
+    height: 20rem;
   }
 
   .intro-styling {

@@ -40,7 +40,7 @@
         name="name"
         id="name"
         required
-        placeholder="e.g John Doe"
+        placeholder="Your name..."
         class="input-field"
       />
 
@@ -50,7 +50,7 @@
         name="email"
         id="email"
         required
-        placeholder="e.g johndoe@mail.com"
+        placeholder="Your email..."
         class="input-field"
       />
 
@@ -59,7 +59,7 @@
         name="message"
         id="message"
         required
-        placeholder="Tell me your message..."
+        placeholder="Your message..."
         class="input-field"
       ></textarea>
     </fieldset>
