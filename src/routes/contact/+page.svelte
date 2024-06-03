@@ -1,5 +1,6 @@
 <script>
   import Header from "$lib/components/Header.svelte";
+  import Loader from "$lib/components/svg/loader.svelte";
   import { enhance } from "$app/forms";
 
   let isSubmitting = false;
@@ -54,6 +55,9 @@
         class="input-field"
       />
 
+      <Loader />
+
+
       <label for="message" class="form-label"><span>Message</span></label>
       <textarea
         name="message"
@@ -74,7 +78,7 @@
 
     <button type="submit" class="btn btn-primary" disabled={isSubmitting}>
       {#if isSubmitting}
-        Versturen...
+      <Loader />
       {:else}
         Verstuur
       {/if}
