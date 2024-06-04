@@ -55,9 +55,6 @@
         class="input-field"
       />
 
-      <Loader />
-
-
       <label for="message" class="form-label"><span>Message</span></label>
       <textarea
         name="message"

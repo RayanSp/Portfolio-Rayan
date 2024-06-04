@@ -243,4 +243,11 @@
     padding-left: 2rem;
     font-weight: bolder;
   }
+
+  @media screen and (max-width: 800px) {
+    .header-styling {
+      margin-right: 5rem;
+      margin-left: 5rem;
+    }
+  }
 </style>

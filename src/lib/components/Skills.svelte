@@ -69,8 +69,8 @@
     flex-direction: row;
     justify-content: center;
     /* width: 60rem; */
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 18rem;
+    margin-right: 18rem;
     background-color: var(--c-container);
     margin-bottom: 5rem;
     border-radius: 15px;
@@ -113,6 +113,27 @@
     }
     to {
       transform: translateX(-100%);
+    }
+  }
+
+  @media screen and (max-width: 1045px) {
+    .logo {
+      margin-right: 10rem;
+      margin-left: 10rem;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .logo {
+      margin-right: 5rem;
+      margin-left: 5rem;
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    .logo {
+      margin-right: 3rem;
+      margin-left: 3rem;
     }
   }
 </style>
