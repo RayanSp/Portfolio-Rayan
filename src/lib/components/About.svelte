@@ -31,8 +31,8 @@ onMount(() => {
       <div class="intro-styling">
         <h1>Hi, I'm Rayan Spall</h1>
         <h2>Frontend Developer</h2>
-        <button class="btn-contact" href="/contact">Contact Me</button>
-        <button class="btn-work" href="#">My Work</button>
+        <a href="/contact" class="btn-contact">Contact Me</a>
+        <a href="#work" class="btn-work">My Work</a>
       </div>
       <div>
         <!-- svelte-ignore a11y-img-redundant-alt -->
@@ -41,8 +41,8 @@ onMount(() => {
 
     </article>
 
-    <article id="About" class="about">
-      <div>
+    <article class="about">
+      <div id="about">
       <h3>About Me</h3>
       <p class="personal-info">
         My name Rayan Spall, a 19 year old frontend developer. I'm currently

@@ -4,7 +4,7 @@
 <section>
   <!-- <h4>Skills</h4> -->
 
-  <article id="Skills" class="logo">
+  <article id="skills" class="logo">
     <div class="logos-slide">
       <div class="skills">HTML</div>
       <div class="skills">CSS</div>
