@@ -19,5 +19,8 @@
 		"graphql": "^16.8.1",
 		"graphql-request": "^6.1.0",
 		"gsap": "^3.12.2"
-	}
+	},
+	"engines": {
+		"node": ">=16.0.0"
+	  }
 }
