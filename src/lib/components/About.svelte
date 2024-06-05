@@ -36,7 +36,7 @@ onMount(() => {
       </div>
       <div>
         <!-- svelte-ignore a11y-img-redundant-alt -->
-        <!-- <img src="images/pf_rayan.png" alt="picture of me"  /> -->
+        <img src="images/memeoji.png" alt="picture of me"  />
       </div>
 
     </article>
@@ -73,6 +73,7 @@ onMount(() => {
   .intro {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background: var(--c-container);
     margin-left: 18rem;
     margin-right: 18rem;
@@ -82,7 +83,7 @@ onMount(() => {
   }
 
   img {
-    height: 20rem;
+    height: 12rem;
   }
 
   .intro-styling {
@@ -231,6 +232,8 @@ onMount(() => {
     
     .intro {
      justify-content: center;
+     align-items: center;
+     flex-direction: column;
      padding-left: 1rem;
      padding-right: 1rem;
     }

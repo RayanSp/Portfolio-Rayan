@@ -30,20 +30,18 @@ const actions = {
       if (response.ok) {
         return {
           success: true,
-          message: "Uw bericht is verstuurd✅",
+          message: "Verzonden!",
           values: { name: "", email: "", message: "" }
         };
       } else {
-        console.error("Response error:", result);
         return fail(500, {
-          error: "Er is iets misgegaan. Probeer het opnieuw.",
+          error: "Er is een fout opgetreden. Probeert u het alstublieft opnieuw.",
           values: { name, email, message }
         });
       }
     } catch (err) {
-      console.error("Verzending mislukt:", err);
       return fail(500, {
-        error: "Er is iets misgegaan. Probeer het opnieuw.",
+        error: "Er is een fout opgetreden. Probeert u het alstublieft opnieuw.",
         values: { name, email, message }
       });
     }
