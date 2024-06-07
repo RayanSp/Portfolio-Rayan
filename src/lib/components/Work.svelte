@@ -1,54 +1,79 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onMount } from "svelte";
+	import { writable } from "svelte/store";
+  
 
-	onMount(() => {
-		const username = 'kosterm14';
-		const apiUrl = `https://api.github.com/users/${username}/repos?sort=updated&per_page=50`;
+  
+	// GitHub API variables
+	const username = "RayanSp";
+	const apiUrl = `https://api.github.com/users/${username}/repos?sort=updated&per_page=50`;
+  
+	// Store for repositories
+	let repos = writable([]);
+  
+	// Function to filter repositories based on specific names
+	function filterRepos(repos) {
+	  const specificRepos = [
+		"vervoerregio-amsterdam",
+	  ];
+	  return repos.filter((repo) =>
+		specificRepos.includes(repo.name.toLowerCase())
+	  );
+	}
+  
+	onMount(async () => {
+	  // Fetch and set repositories
+	  try {
+		const response = await fetch(apiUrl);
+		let data = await response.json();
+		data.sort((a, b) => b.stargazers_count - a.stargazers_count);
+		repos.set(filterRepos(data));
+	  } catch (error) {
+		console.error("Error fetching repos:", error);
+	  }
+  
+	  
+	
 
-		fetch(apiUrl)
-			.then((response) => response.json())
-			.then((repos) => {
-				repos.sort((a, b) => b.stargazers_count - a.stargazers_count);
+		
 
-				const container = document.getElementById('repos-container');
-				repos.forEach((repo) => {
-					const repository = document.createElement('div');
-					repository.className = 'repository';
-					repository.innerHTML = `
-          	<h2>
-				<a href="${repo.html_url}" target="_blank">${repo.name}</a>
-			</h2>
-
-		  	<p>
-				<a href="${repo.homepage}" target="_blank">${repo.homepage || 'no link:('}</a>
-			</p>
-
-          	<p>${repo.description || 'No description available.'}</p>
-
-          <section>⭐ ${repo.stargazers_count} | 👁️ ${repo.watchers_count} | 🍴 ${repo.forks_count}</section>
-          `;
-					container.appendChild(repository);
-				});
-			})
-			.catch((error) => console.error('Error fetching repos:', error));
+	  
 	});
-</script>
+  </script>
+  
+  <h2>Projects</h2>
+  
+  <div class="cards">
+	{#each $repos as repo}
+	 
+			<ul>
+			  <li>⭐ {repo.stargazers_count}</li>
+			  <li>👁️ {repo.watchers_count}</li>
+			  <li>🍴 {repo.forks_count} |</li>
+			  <li>💻 {repo.language}</li>
+			</ul>
 
-<section>
-	<h1 id="work">Mijn levenswerk</h1>
+  
+	
+			<h3>
+			  {repo.name}
+			</h3>
+  
+  
+			<p>
+			  {repo.description || "No description available."}
+			</p>
+			<p>
+			  <a href={repo.homepage} target="_blank"> Website </a>
+			</p>
+  
+			<p><a href={repo.html_url} target="_blank"> GitHub</a></p>
 
-	<nav>
-		<input
-			class="searchbar"
-			type="text"
-			id="searchInput"
-			onkeyup="search()"
-			placeholder="Zoek een repo..."
-		/>
-	</nav>
+		  
 
-	<ul id="repos-container"></ul>
-</section>
+
+	{/each}
+  </div>
 
 <style>
 
