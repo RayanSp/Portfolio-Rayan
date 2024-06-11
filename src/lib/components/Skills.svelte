@@ -72,7 +72,7 @@
     margin-left: 18rem;
     margin-right: 18rem;
     background-color: var(--c-container);
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     border-radius: 15px;
   }
 

@@ -165,6 +165,10 @@
     border: 2px solid lightgreen;
   }
 
+  textarea:valid {
+    border: 2px solid lightgreen;
+  }
+
   form:invalid .btn-primary {
     background-color: #6c757d;
     cursor: not-allowed;
